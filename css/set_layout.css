@@ -1,0 +1,74 @@
+﻿/* page layout setting */
+#container 
+{
+	font-family: 'Nanum Gothic', sans-serif;
+	width: 940px;
+	margin: 0px auto;
+	padding: 20px;
+	border: 1px solid #bcbcbc;
+}
+#portal-navi 
+{
+	font-family: 'Nanum Gothic', sans-serif;
+ 	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #bcbcbc;
+	background-color: #000000;
+}
+#portal-navi.img
+{
+	width: 100%;
+	vertical-align: middle;
+}
+#local-navi 
+{
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 10px;
+ 	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #bcbcbc;
+}
+
+#main-navi
+{
+	font-family: 'Nanum Gothic', sans-serif;
+ 	padding: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #bcbcbc;
+	border-radius: 20px 20px 20px 20px;
+}
+#ry-sidebar-left 
+{
+	font-family: 'Nanum Gothic', sans-serif;
+	width: 160px;
+	padding: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: left;
+	border: 1px solid #bcbcbc;
+}
+#ry-content 
+{
+	font-family: 'Nanum Gothic', sans-serif;
+	width: 450px;
+	padding: 20px;
+	margin-bottom: 20px;
+	float: left;
+	border: 1px solid #bcbcbc;
+}
+#ry-sidebar-right 
+{
+	font-family: 'Nanum Gothic', sans-serif;
+	width: 160px;
+	padding: 20px;
+	margin-bottom: 20px;
+	float: right;
+	border: 1px solid #bcbcbc;
+}
+#ry-footer 
+{
+	font-family: 'Nanum Gothic', sans-serif;
+	clear: both;
+	padding: 20px;
+	border: 1px solid #bcbcbc;
+}
