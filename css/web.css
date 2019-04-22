@@ -1,0 +1,195 @@
+﻿* {
+box-sizing: border-box;
+font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+padding: 0px;
+margin: 0px;
+background: #E0F2F7;
+}
+
+#pageEx 
+{
+width: 100%;
+padding: 10px;
+font-size: 12px;
+text-align: center;
+background: #fff
+}
+
+#topTag
+{
+padding: 10px;
+margin: 0px auto;
+text-align: left;
+display: block;
+}
+
+
+.titleTag {
+font-size: 10px;
+color: #ccc;
+padding: 10px;
+text-align: center;
+border: 1px solid #D8D8D8;
+border-radius: 15px 15px 15px 15px;
+background: #fff;
+display:inline-block;
+margin-bottom: 10px
+}
+
+.titleText {
+color: #ccc;
+font-size: 12px;
+text-align: center;
+}
+
+
+/*.card {
+background-color: white;
+width: 100%;
+color: #F78181;
+padding: 20px;
+margin: 10px auto;
+display: inline-block;
+box-shadow: 3px 3px 10px #ccc
+}
+*/
+
+.card {
+background-color: white;
+border: 1px solid #D8D8D8;
+border-style: dashed;
+width: 80%;
+color: #008080;
+padding: 20px;
+margin: 10px auto;
+}
+
+
+
+
+
+.branch
+{
+width: 100px;
+height: 100px;
+border: 1px solid #D8D8D8;
+border-style: dashed;
+background: #fff;
+font-size: 12px;
+border-radius: 50%;
+cursor: pointer;
+padding: 15px;
+margin: 5px;
+display: inline-block;
+text-align: center;
+vertical-align: middle;
+}
+
+span:hover.branch
+{
+font-weight: bold;
+background:  #E1F5A9;
+}
+
+.branch-on
+{
+width: 50px;
+height: 50px;
+border: 1px solid #D8D8D8;
+border-style: dashed;
+background: #D8F781;
+font-size: 12px;
+border-radius: 50%;
+cursor: pointer;
+padding: 15px;
+margin: 5px;
+display: inline-block;
+vertical-align: middle;
+}
+
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.footer {
+font-size: 10px;
+padding: 10px;
+text-align: center;
+margin-top: 20px;
+background-color:rgba(255,255,255,0.4)
+}
+
+.proName {
+font-size: 20px;
+font-weight: bold;
+padding-top: 10px;
+color: #ccc
+}
+
+.proNo {
+font-size: 14px;
+text-align: right;
+color: #ccc;
+}
+
+.proEx {
+padding: 10px
+}
+
+//table 스타일
+
+table.type11 {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 1px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px 10px auto;
+    font-size: 11px
+}
+
+table.type11 th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #fff;
+    background: #37C3C3;
+    font-size: 12px
+}
+
+table.type11 td {
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+    background: #eee;
+    font-size: 12px;
+}
+
+table.type11 td.masking {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+
+
+/* Button */
+.btMove {
+border: 1px solid rgb(200, 200, 200);
+background: rgb(244, 244, 244);
+font-size: 12px;
+padding:3px;
+border-radius: 15px 15px 15px 15px;
+text-decoration: none;
+}
+
+.btMove:hover, .btMove:focus {
+ color: black;
+text-decoration: none;
+cursor: pointer;
+}

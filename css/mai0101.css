@@ -1,10 +1,23 @@
-﻿/* page layout setting */
-#container 
+﻿#portal-navi-mo,#portal-navi-mo-ex,#mobile-navi,mobile-navi-ex {display: none}
+
+body {
+font-family: 'Nanum Gothic', sans-serif;
+padding: 0px;
+margin: 0px;
+}
+
+img {vertical-align: middle}
+
+/*상단 포탈 게이트영역: 모바일디바이스에서는 아이콘메뉴로 축소됨*/
+
+#topArea 
 {
-	font-family: 'Nanum Gothic', sans-serif;
-	width: 980px;
-	margin: 0px auto;
-	padding: 0px;
+width: 100%;
+height: 45px;
+padding: 0px;
+margin: 0px;
+text-align: center;
+background: #E6E6E6;
 }
 
 #portal-navi 
@@ -14,11 +27,20 @@
 	margin-bottom: 10px;
 	border: none;
 	background-color:#E6E6E6;
+	display: block
 }
-#portal-navi img {vertical-align: middle}
 
 #portal-navi img {vertical-align: middle; -webkit-filter: grayscale(100%); filter: gray; opacity:0.5!important; filter:alpha(opacity=50); margin-left: 10px; margin-right: 10px}
 
+/* page layout setting */
+
+#container 
+{
+	font-family: 'Nanum Gothic', sans-serif;
+	width: 780px;
+	margin: 0px auto;
+	padding: 0px;
+}
 
 #local-navi 
 {
@@ -26,7 +48,7 @@
 	width: 780px;
 	font-size: 12px;
 	color: #BDBDBD;
- 	padding: 0px 20px 10px 20px
+ 	padding: 20px 20px 10px 20px
 
 }
 
@@ -40,6 +62,8 @@
 #main-navi img {vertical-align: middle}
 
 #main-navi img {vertical-align: middle; -webkit-filter: grayscale(100%); filter: gray; opacity:0.5!important; filter:alpha(opacity=50); margin-left: 5px; margin-right: 5px}
+
+
 
 #section
 {
@@ -166,8 +190,6 @@ vertical-align: middle;
 #right-silder 
 {
 width: 100px;
-position: fixed; 
-top: 60px; right: 15px;
 padding: 0px;
 }
 
@@ -181,7 +203,9 @@ padding: 0px;
 }
 
 input {vertical-align: middle;}
-input.form-text {font-size: 12px; color: #BDBDBD; border: 1px solid #bcbcbc; height: 20px; width: 450px; padding: 0px 10px }
+input.form-text {font-size: 12px; color: #BDBDBD; border: 1px solid #bcbcbc; height: 20px; width: 150px; padding: 0px 10px }
+
+input.form-text2 {font-size: 12px; color: #BDBDBD; border: 1px solid #bcbcbc; height: 20px; width: 100px; padding: 0px 10px }
 
 input.main-form {font-size: 15px; color: #BDBDBD; border: 1px solid #bcbcbc; height: 34px; width: 450px; padding: 0px 10px}
 
@@ -315,13 +339,17 @@ text-align: center
 
 
 
-.fs-8 {font-size: 8px}
+.fs-8 {padding: 10px; font-size: 8px;font-family: 'Nanum Gothic', sans-serif;}
 
-.fs-10 {font-size: 10px}
+.fs-10 {padding: 10px; font-size: 10px;font-family: 'Nanum Gothic', sans-serif;}
 
-.fs-13  {font-size: 13px}
+.fs-13  {padding: 10px; font-size: 13px;font-family: 'Nanum Gothic', sans-serif;}
 
 .fs-13-b  {font-size: 13px; font-weight:bold; padding:2px 2px 0px 0px; text-align: left}
+
+.ce-15  {padding: 10px; font-size:15px;}
+.ce-25  {padding: 10px; font-size:25px;}
+.ce-25-b  {padding: 10px; font-size:30px;font-weight:bold;}
 
 .link-s {font-size: 10px;}
 .link-m {font-size: 12px;}
