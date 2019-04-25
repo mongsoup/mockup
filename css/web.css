@@ -6,7 +6,7 @@ font-family: 'Nanum Gothic', sans-serif;
 body {
 padding: 0px;
 margin: 0px;
-background: #E0F2F7;
+background: #e6e5e3;
 }
 
 #pageEx 
@@ -15,7 +15,8 @@ width: 100%;
 padding: 10px;
 font-size: 12px;
 text-align: center;
-background: #fff
+color:#f0f0f0;
+background-color:#000
 }
 
 #topTag
@@ -30,7 +31,7 @@ display: block;
 .titleTag {
 font-size: 10px;
 color: #ccc;
-padding: 10px;
+padding: 5px;
 text-align: center;
 border: 1px solid #D8D8D8;
 border-radius: 15px 15px 15px 15px;
@@ -61,75 +62,27 @@ box-shadow: 3px 3px 10px #ccc
 background-color: white;
 border: 1px solid #D8D8D8;
 border-style: dashed;
-width: 80%;
-color: #008080;
+width: 90%;
+color: #6c6c6b;
 padding: 20px;
-margin: 10px auto;
+margin: 30px auto;
 }
 
-
-
-
-
-.branch
-{
-width: 100px;
-height: 100px;
-border: 1px solid #D8D8D8;
-border-style: dashed;
-background: #fff;
-font-size: 12px;
-border-radius: 50%;
-cursor: pointer;
-padding: 15px;
-margin: 5px;
-display: inline-block;
-text-align: center;
-vertical-align: middle;
-}
-
-span:hover.branch
-{
-font-weight: bold;
-background:  #E1F5A9;
-}
-
-.branch-on
-{
-width: 50px;
-height: 50px;
-border: 1px solid #D8D8D8;
-border-style: dashed;
-background: #D8F781;
-font-size: 12px;
-border-radius: 50%;
-cursor: pointer;
-padding: 15px;
-margin: 5px;
-display: inline-block;
-vertical-align: middle;
-}
-
-
-.row:after {
-content: "";
-display: table;
-clear: both;
-}
 
 .footer {
-font-size: 10px;
+font-size: 11px;
 padding: 10px;
 text-align: center;
 margin-top: 20px;
-background-color:rgba(255,255,255,0.4)
+background-color:rgba(255,255,255,0.5);
+color: #000
 }
 
 .proName {
 font-size: 20px;
 font-weight: bold;
 padding-top: 10px;
-color: #ccc
+color:dimgray
 }
 
 .proNo {
@@ -142,24 +95,22 @@ color: #ccc;
 padding: 10px
 }
 
-//table 스타일
-
 table.type11 {
-    width: 80%;
-    border-collapse: separate;
-    border-spacing: 1px;
-    text-align: center;
+    border-collapse: collapse;
+    text-align: left;
     line-height: 1.5;
-    margin: 20px 10px auto;
-    font-size: 11px
+    border: 0px;
+    margin: 0px;
 }
+
 
 table.type11 th {
     padding: 10px;
+    text-align: center;
     font-weight: bold;
     vertical-align: top;
     color: #fff;
-    background: #37C3C3;
+    background: #6f6c61;
     font-size: 12px
 }
 
@@ -167,7 +118,6 @@ table.type11 td {
     padding: 10px;
     vertical-align: top;
     border-bottom: 1px solid #ccc;
-    background: #eee;
     font-size: 12px;
 }
 
@@ -179,17 +129,24 @@ table.type11 td.masking {
 
 
 /* Button */
-.btMove {
-border: 1px solid rgb(200, 200, 200);
-background: rgb(244, 244, 244);
-font-size: 12px;
-padding:3px;
-border-radius: 15px 15px 15px 15px;
+button {
+background-color:#6c6c6b;
+padding: 2px 2px;
+margin: 5px;
+border: none;
+color: #fff;
+text-align: center;
 text-decoration: none;
+font-size: 13px;
+display: inline-block;
+cursor: pointer;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+border: 1px solid #D8D8D8;
 }
 
-.btMove:hover, .btMove:focus {
- color: black;
-text-decoration: none;
-cursor: pointer;
+button:focus {
+	border: 1px solid #D8D8D8;
+	border-style: dashed;
+outline: 0px
 }
