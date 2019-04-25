@@ -1,6 +1,49 @@
+button {
+background-color: #fff;
+padding: 2px 2px;
+margin: 2px;
+border: none;
+color: black;
+text-align: center;
+text-decoration: none;
+font-size: 11px;
+display: inline-block;
+cursor: pointer;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+}
+
+button:focus {
+	border: 1px solid #D8D8D8;
+	border-style: dashed;
+outline: 0px
+}
+
+.mix {
+background-color: #fff;
+padding: 3px 3px;
+margin: 2px;
+border: 1px solid #fff;
+color: #ccc;
+text-align: left;
+text-decoration: none;
+font-size: 10px;
+display: inline-block;
+cursor: pointer;	
+}
+
+button:focus .mix {
+	border: 1px solid #D8D8D8;
+	border-style: dashed;
+outline: 0px;
+
+}
+
+.hand {cursor: pointer;}
+
 .btn-sec-roll {
-	width: 50px;
-	height: 50px;
+	width: 90px;
+	height: 90px;
 	border: 1px solid #D8D8D8;
 	border-style: dashed;
 	background: #fff;
@@ -13,10 +56,19 @@
 	vertical-align: middle;
 }
 
-span:hover.btn-sec-roll {
-	font-weight: bold;
-	background:  #E1F5A9;
+button:hover.btn-sec-roll {
+	background-color:#f5f5dc;
+	border: 1px solid #D8D8D8;
+	border-style: dashed;
+	outline: 0px
 }
+
+button:focus.btn-sec-roll {
+	background-color:#eee6c4;
+	border: 2px solid #D8D8D8;
+	outline: 0px
+}
+
 
 .btn-sec-roll-on {
 	width: 50px;
@@ -44,7 +96,7 @@ cursor: pointer;
 
 span.btn-o {
 border: 1px solid rgb(200, 200, 200);
-background: #ffbc40;
+background: #e0edf6;
 font-size: 11px;
 padding:3px;
 border-radius: 5px 5px 5px 5px;
@@ -81,28 +133,40 @@ cursor: pointer;
 
 .btn-L {
 font-size: 18px;
+border: 2px solid #fff;
 color: #BDBDBD;
 padding:0px 0px 5px 0px;
-margin: 0px 20px 0px 20px;
+margin: 0px 12px 0px 12px;
 cursor: pointer;
 }
 
-span:hover.btn-L {
-font-weight: bold;
-border-bottom: 5px solid #E1F5A9;
+button:hover.btn-L {
+border: 2px solid #fff;
+border-bottom: 2px solid #cccccc;
+outline:0px
+}
+
+button:focus.btn-L {
+border: 2px solid #fff;
+border-bottom: 2px solid #cccccc;
+outline:0px
 }
 
 
+/*right-slider: banner*/
 .btn-L-g {
 text-align: center;
 border: 1px solid #D8D8D8;
 border-style: dashed;
-background: #ECF6CE;
+background: #f5f5dc;
 font-size: 9px;
 padding:10px 5px 10px 5px;
 border-radius: 10px 10px 10px 10px;
 cursor: pointer;
 }
+
+
+
 
 .btn-act-g {
 border: 1px solid rgb(200, 200, 200);
@@ -177,10 +241,10 @@ display: inline-block;
 
 /*탭메뉴*/
 .tab-menu {
-width: 25%;
-height: 30px;
+width: 80px;
+height: 40px;
 border: 1px solid rgb(200, 200, 200);
-background-color:beige;
+background-color:#fff;
 font-size: 11px;
 color: #BDBDBD;
 padding:5px;
@@ -191,10 +255,20 @@ text-align: center;
 vertical-align: middle
 }
 
-span:hover.tab-menu {
-font-weight: bold;
+button:hover.tab-menu {
 background: #E0F2F7;
+border-style: dashed;
 }
+
+button:focus.tab-menu {
+border: 1px solid #D8D8D8;
+background: #f5f5dc;
+border-style: dashed;
+outline: 0px
+}
+
+
+
 
 .listbox {
 width: 90%;
@@ -229,7 +303,6 @@ cursor: pointer;
 }
 
 input:focus.com-btn {
-font-weight: bold;
 background: #E0F2F7;
 outline: 0px
 }
@@ -246,4 +319,9 @@ margin-left: 5px;
 text-decoration: none;
 cursor: pointer;
 border-radius: 50px 50px 50px 50px;
+}
+
+input:focus.btn-dummy {
+background: #E0F2F7;
+outline: 0px
 }

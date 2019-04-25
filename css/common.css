@@ -25,9 +25,7 @@ input.keywd100 {font-size: 12px; color: #BDBDBD; border: 1px solid #bcbcbc; heig
 input.keywd120 {font-size: 12px; color: #BDBDBD; border: 1px solid #bcbcbc; height: 20px; width: 120px; padding: 0 5px; text-align: center;border-radius: 5px 5px 5px 5px;}
 
 
-
 input:focus {
-font-weight: bold;
 background: #E0F2F7;
 outline: 0px
 }
@@ -65,10 +63,9 @@ padding:5px
 }
 
 .layer_tit {
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: bold;
 	padding: 0px;
-	color: cadetblue
 }
 
 
@@ -152,7 +149,7 @@ color: #848484;
 
 .con-ico {float: left; padding-right:3px}
 
-.con-ico-vm {padding-right:3px; vertical-align: middle}
+.con-ico-p3 {padding:3px; }
 
 .con-imgbox{
 border: 1px solid gray;
@@ -200,37 +197,26 @@ text-align: left;
 float:left
 }
 
-.footer-div{
-	width:880px;
-	background: #000;
-	text-align: center;
-	margin: 0px auto
+.floating-list-box {
+width: 94px;
+height: 300px;
+padding: 0px;
+margin: 0px;
+text-align: center;
+border: 1px solid #D8D8D8;
+background: #fff;
 }
 
-.footer-div1{
-	width: 20%;
-	height:50px;
-	float: left;
-}
 
-.footer-div2{
-	width: 50%;
-	height:50px;
-	text-align: left;
-	float: left;
-}
-
-.footer-div3{
-	width: 10%;
-	height:50px;
-	float: left;
-	text-align: right;
-}
-
-.footer-div4{
-	width: 20%;
-	height:50px;
-	float: left;
+.floating-list-view {
+width: 75px;
+height: 60px;
+padding: 5px;
+margin: 5px;
+text-align: left;
+font-size: 11px;
+cursor: pointer;
+background: #F2F2F2;
 }
 
 
@@ -238,6 +224,8 @@ float:left
 .fs-8 {padding: 10px; font-size: 8px;font-family: 'Nanum Gothic', sans-serif;}
 
 .fs-10 {padding: 10px; font-size: 10px;font-family: 'Nanum Gothic', sans-serif;}
+
+.fs-10-p0 {padding: 0px; font-size: 10px;font-family: 'Nanum Gothic', sans-serif;}
 
 .fs-11 {font-size: 11px;font-family: 'Nanum Gothic', sans-serif;}
 
@@ -336,7 +324,7 @@ padding-top:20px;
 table.type11 {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 1px;
+    border-spacing: 0px;
     text-align: left;
     line-height: 1.5;
     margin: 5px auto;
@@ -416,20 +404,7 @@ select {
 }
 
 
-button {
-background-color: #fff;
-padding: 2px 2px;
-margin: 2px;
-border: none;
-color: black;
-text-align: center;
-text-decoration: none;
-font-size: 11px;
-display: inline-block;
-cursor: pointer;
-}
 
-.hand {cursor: pointer;}
 
 
 /*checkbox*/
