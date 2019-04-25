@@ -7,12 +7,16 @@
 <link href="css/common.css" rel="stylesheet" type="text/css" />
 <link href="css/btn.css" rel="stylesheet" type="text/css" />
 <link href="css/modal.css" rel="stylesheet" type="text/css" />
-<link href="css/mai0101.css" rel="stylesheet" type="text/css" />
+<link href="css/mai0101.css" media="(max-width: 12450px)" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" media="(max-width: 680px)" href="css/m480.css">
 <script type="text/javascript" src="js/common.js"></script>
 </head>
 <body>
-<!--시작: 상단 포탈영역: 모바일 디바이스에 따라 축소되는 영역-->
+	
+
+	
+	
+<!--//start: top potal area: total searching, Links(login/find a password/sign up) : + mobile version-->
 <div id="topArea">
 	<div id="portal-navi">
 		<img src="img/p_logo.png" width="100px" />
@@ -35,33 +39,32 @@
 		<span class="link-m-r">로그인 | 아이디/패스워드 찾기 <br />회원가입</span>
 	</div>
 </div>
-<!--끝: 상단 포탈영역: 모바일 디바이스에 따라 축소되는 영역-->
-
-
+<!--//start: top potal area: total searching, Links(login/find a password/sign up) : + mobile version-->	
+	
+	
+<!--//start: main body 780px-->
 <div id="container">
-	<!--시작: 네비게이션 영역-->
+	
+	<!--//start: navigation area-->
 	<div id="local-navi">
 	<span class="link-m-r">국악아카이브 소개 | 자료기증안내  |  자주하는 질문  | 사이트맵</span><span class="btn">English</span>
 	</div>
-
 	<div id="main-navi">
 		<img src="img/logo.png" width="250px" />
-		<span class="btn-L">기록 목록</span>
-		<span class="btn-L">디렉토리</span>
-		<span class="btn-L">컬렉션</span>
-		<span class="btn-L">온라인전시</span>
+		<button class="btn-L">기록 목록</button>
+		<button class="btn-L">디렉토리</button>
+		<button class="btn-L">컬렉션</button>
+		<button class="btn-L">온라인전시</button>
 		<span class="hand" onclick="showID('modal-search')"><img src="img/ico_search_b.png" width="35px" /></span>
 	</div>
-
-	<!--//모바일디바이스 축소 네비게이션: 로컬, 메인, 히스토리 통합-->
+	<!--모바일디바이스 축소 네비게이션: 로컬, 메인, 히스토리 통합-->
 	<div id="mobile-navi">
 		<span class="ce-25-b" onclick="showID('mobile-navi-ex')">&#8801;</span>
 		<img src="img/logo.png" width="200px" />
 		<span class="hand" onclick="showID('mobile-navi-ex-se')"><img src="img/ico_search_b.png" width="25px" /></span>
 	</div>
-
-	<!--//모바일디바이스 확장 네비게이션: 로컬, 메인, 히스토리 통합-->
-	<div id="mobile-navi-ex" style="display:none" onMouseOver="mouseOver(this)" onMouseOut="mouseOut(this)">
+	<!--모바일디바이스 확장 네비게이션: 로컬, 메인, 히스토리 통합-->
+	<div id="mobile-navi-ex" style="display:none;z-index:100" onMouseOver="mouseOver(this)" onMouseOut="mouseOut(this)">
 		<div id="m-n-left">
 			<ul class="li01">
 				<li>홈</li>
@@ -92,18 +95,18 @@
 
 			</div>
 			<div id="m-n-right-2r">
-				<img src="img/ico_fav.png" width="30px" /><br />
+				<img src="img/ico_fav.png" width="30px"  class="trans50" /><br />
 				<span class="fs-10">즐겨찾기</span><br />
-				<img src="img/ico_lib.png" width="30px" /><br />
+				<img src="img/ico_lib.png" width="30px"  class="trans50" /><br />
 				<span class="fs-10">라이브러리</span><br />
-				<img src="img/ico_his.png" width="28px" /><br />
+				<img src="img/ico_his.png" width="30px"  class="trans50" /><br />
 				<span class="fs-10">최근본기록</span>
 			</div>
 		</div>
 	</div>
 
-	<!--//모바일디바이스 변경 검색 레이어-->
-	<div id="mobile-navi-ex-se" style="display:none" onMouseOver="mouseOver(this)" onMouseOut="mouseOut(this)">
+	<!--모바일디바이스 변경 검색 레이어-->
+	<div id="mobile-navi-ex-se" style="display:none;z-index:100" onMouseOver="mouseOver(this)" onMouseOut="mouseOut(this)">
 		<div id="mobile-navi-ex-se-1c">
 			<span class="layer_tit">기록검색</span>
 			<span class="btn">상세검색</span>
@@ -116,19 +119,13 @@
 			<img src="img/ico_search_b.png" width="25px" />
 		</div>
 		<div id="mobile-navi-ex-se-2r">
-			<span class="tab-menu" onclick="chgIndex1()">검색어<br />자동완성</span>
-			<span class="tab-menu" onclick="chgIndex2()">국악시소러스<br />참조</span>
-			<span class="tab-menu" onclick="chgIndex3()">최근<br />검색어</span>	
+			<button class="tab-menu" onclick="chgIndex1()" checked>검색어<br />자동완성</button>
+			<button class="tab-menu" onclick="chgIndex2()">국악시소러스<br />참조</button>
+			<button class="tab-menu" onclick="chgIndex3()">최근<br />검색어</button>	
 		</div>
 		<div id="mobile-navi-ex-se-box">
 			<div id="box-1r" style="z-index:1">
 				<table class="type11">
-					<!--thead>
-					<tr>
-					  <th scope="cols">검색어 자동완성</th>
-					</tr>
-					</thead-->
-					<tbody>
 					<tr>
 					  <td>종묘제례악</td>
 					</tr>
@@ -141,32 +138,18 @@
 					<tr>
 					  <td>종묘제례악 변천사</td>
 					</tr>
-					</tbody>
 				</table>
 			</div>
 			<div id="box-2r" style="z-index:-1">
 				<table class="type11">
-					<!--thead>
-					<tr>
-					  <th scope="cols">검색된 시소러스 용어</th>
-					</tr>
-					</thead-->
-					<tbody>
 					<tr>
 						<td>종묘악</td>
 						<td class="align_r"><input type="checkbox" checked></td>					
 					</tr>
-					</tbody>
 				</table>	
 			</div>
 			<div id="box-3r" style="z-index:-1">
 				<table class="type11">
-					<!--thead>
-					<tr>
-					  <th scope="cols">최근 검색한 키워드 이력</th>
-					</tr>
-					</thead-->
-					<tbody>
 					<tr>
 						<td>공연</td>
 						<td class="align_r"><img src="img/ico_key_fav.png" width="20px" /><img src="img/ico_key_tra.png" width="20px" /></td>					
@@ -179,22 +162,21 @@
 						<td>최덕원</td>
 						<td class="align_r"><img src="img/ico_key_fav.png" width="20px" /><img src="img/ico_key_tra.png" width="20px" /></td>					
 					</tr>
-					</tbody>
 				</table>
 			</div>
 		</div>	
 	</div>
-	<!--끝: 네비게이션 영역-->
+	<!--//end: navigation area-->
 	
-	<!--시작: 롤링영역-모바일 축소 시 일부 섹션 -->
+	<!--//start: rolling sections : + mobile version-->
 	<div id="section">
 		<!--롤링영역 메뉴 영역-->
 		<div id="section-menu">
-			<span id="mem-01" class="btn-sec-roll" onclick="showTab('main-section-1'); onMem('mem-01');">ico<br>기록검색</span>
-			<span id="mem-02" class="btn-sec-roll" onclick="showTab('main-section-2'); onMem('mem-02');">ico<br>연도별</span>
-			<span id="mem-03" class="btn-sec-roll" onclick="showTab('main-section-3'); onMem('mem-03');">ico<br>온라인<br>전시</span>
-			<span id="mem-04" class="btn-sec-roll" onclick="showTab('main-section-4'); onMem('mem-04');">ico<br>기증자</span>
-			<span id="mem-05" class="btn-sec-roll" onclick="showTab('main-section-5'); onMem('mem-05');">ico<br>시리즈</span>
+			<button class="btn-sec-roll" onclick="showTab('main-section-1')" autofocus>ico<br>기록검색</button>
+			<button class="btn-sec-roll" onclick="showTab('main-section-2')">ico<br>연도별</button>
+			<button class="btn-sec-roll" onclick="showTab('main-section-3')">ico<br>온라인<br>전시</button>
+			<button class="btn-sec-roll" onclick="showTab('main-section-4')">ico<br>기증자</button>
+			<button class="btn-sec-roll" onclick="showTab('main-section-5')">ico<br>시리즈</button>
 		</div>
 		<!--기록검색 롤링 영역-->
 		<div id="main-section-1">
@@ -336,7 +318,9 @@
 			</div>
 		</div>
 	</div>
-	<!--시작:추천 컨텐츠 목록-->
+	<!--//end: rolling sections : + mobile version-->
+	
+	<!--//start: recommand content List: 2 colums-->
 	<div id="content-list">
 		<div id="content-list-left">
 			<div class="con-tit">최신 업데이트 자료</div>
@@ -418,22 +402,17 @@
 		
 		</div>	
 	</div>
-	<div id="right-silder" style="display:none">
-		<div class="btn-L-g">국악아카이브<br>핵심 기능 설명서<br><br>
-		<span class="fs-13-b">이용가이드 <img src="img/flag.png" width="15px" /></span>
-		</div>
-		<div class="mini-list-tit">
-		<img src="img/ico_his.png" width="25px" /> 최근 본 기록
-		</div>
-	</div>
+	<!--//end: recommand content List-->
 </div>
+<!--//end: main body 780px-->
 
-<!--시작:footer 영역-->
-<div id="footer-noti">
-		<img src="img/ico_noti_s.png" width="25px" /><span class="fs-11-l">[점검 안내]국악아카이브 홈페이지 서비스 중단 안내[2.20.]</span>
-	<button type="button" id="modal_noti_v_btn">더보기</button>	
-</div>
 	
+	
+<!--//start: footer Area: 4 rows-->
+<div id="footer-noti">
+	<img src="img/ico_noti_s.png" width="25px" /><span class="fs-11-l">[점검 안내]국악아카이브 홈페이지 서비스 중단 안내[2.20.]</span>
+	<button type="button" id="modal_noti_v_btn">더보기</button>	
+</div>	
 <div id="footer-link">
 	<span class="fs-11-l">개인정보처리방침  |  저작권 정책  |  뷰어다운로드</span>	
 </div>
@@ -446,7 +425,7 @@
 			<span class="fs-11">서울시 서초구 남부순환로 2364  |  전화 02-580-3153  | 팩스 02-580-3079<br />COPYRIGHTS ©NATIONAL GUGAK CENTER ALL RIGHTS RESERVED</span>
 		</div>
 		<div class="footer-div3">
-			<img src="img/mark.png" height="40px" class="con-ico" />
+			<img src="img/mark.png" height="40px" />
 		</div>
 		<div class="footer-div4">
 			<select>
@@ -461,8 +440,59 @@
 <div id="footer-banner">
 	<img src="img/banner.png" />
 </div>
-<!--끝: Footer 영역-->
-<!--시작: The Modal 구역 -->
+<!--end: Footer Area-->
+	
+
+	
+	
+	
+<!--//start: fixed floating Area: banner links, recently views, my favorites, my librarys -->
+<div id="right-silder">
+	<div id="r-s-opener">
+		<input type="button" class="btn-dummy" onclick="showID('r-s-contents')" value="&#8888;" />
+	</div>
+	<div id="r-s-contents">
+		<!--//banner-->
+		<div class="btn-L-g">국악아카이브<br>핵심 기능 설명서<br><br>
+			<span class="fs-13-b">이용가이드 <img src="img/flag.png" width="15px" /></span>
+		</div>
+		<!--//recontly views-->
+		<div id="r-s-views">
+			<div class="mini-list-tit">
+				<img src="img/ico_his.png" width="25px" /> 최근 본 기록
+			</div>
+			<div class="floating-list-box">
+				<button class="mix">
+					<img src="img/ico_pic.png" width="15px" class="con-ico-p3" />
+					<div class="fs-11">부산부립도서관(국립국악원 옛 전경)[1926.]</div>
+				</button>
+				<button class="mix">
+					<img src="img/ico_str.png" width="15px" class="con-ico-p3" />
+					<div class="fs-11">2018 수요춤전: 들숨무용단, 생수(生水)[05.02.]</div>	
+				</button>
+				<button class="mix">
+					<img src="img/ico_str.png" width="15px" class="con-ico-p3" />
+					<div class="fs-11">2016 무용단 정기공연: 무원(舞源)[2016.06.17.]</div>	
+				</button>			
+				<button class="mix">
+					<img src="img/ico_pic.png" width="15px" class="con-ico-p3" />
+					<div class="fs-11">보길도 [가정집 돌담, 마을 돌담][1983.07.19.]</div>	
+				</button>					
+			</div>
+		</div>
+		<!--top&down-->
+		<div id="r-s-bottom">
+		</div>
+		
+	</div>
+</div>
+<!--//end: fixed floating Area: banner links, recently views, my favorites, my librarys -->
+	
+	
+	
+	
+	
+<!--//start: The Modal popup Area: 2ea-->
 <div id="modal-search" style="display:none">
 	<div id="modal-se-co">
 		<div class="align_r">
@@ -504,13 +534,13 @@
 				<td width="100px">첫번째 단어</td>
 				<td width="130px">두번째 단어</td>
 				<td colspan="2" width="180px">단어사이 글자수</td>
-				<td width="60px"></td>
+				<td width="50px"></td>
 			</tr>
 			<tr>
 				<td><input type="checkbox" id="e2" name="cc" class="big" /><label for="e2"></label></td>
 				<td><input type="text" class="keywd70" /></td>
 				<td><input type="text" class="keywd100" /></td>
-				<td colspan="2" width="200px"><input type="text" class="keywd70" /><input type="button" class="com-btn" value="NEAR"><input type="button" class="com-btn" value="WITHIN"></td>
+				<td colspan="2" width="210px"><input type="text" class="keywd70" /><input type="button" class="com-btn" value="NEAR"><input type="button" class="com-btn" value="WITHIN"></td>
 				<td><input type="button" class="btn-dummy" value="+"><input type="button" class="btn-dummy" value="&#8722;"></td>
 			</tr>
 			<tr>
@@ -626,5 +656,11 @@
 	<!--div class="modal_layer"></div-->
 </div>
 <script type="text/javascript" src="js/modal.js"></script>
+<!--end: The Modal popup Area-->
+	
+	
+	
+	
+	
 </body>
 </html>
