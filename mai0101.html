@@ -8,7 +8,8 @@
 <link href="css/btn.css" rel="stylesheet" type="text/css" />
 <link href="css/modal.css" rel="stylesheet" type="text/css" />
 <link href="css/mai0101.css" media="(max-width: 12450px)" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" media="(max-width: 680px)" href="css/m480.css">
+<link rel="stylesheet" type="text/css" media="(max-width: 680px)" href="css/m680.css">
+<link rel="stylesheet" type="text/css" media="(max-width: 480px)" href="css/m480.css">
 <script type="text/javascript" src="js/common.js"></script>
 </head>
 <body>
@@ -184,7 +185,7 @@
 			<span class="tit-txt-b">기록 검색</span><br><br>
 			<input type="text" class="main-form" />
 			<input type="button" class="btn-act-g-m" value="검색" />
-			<input type="button" id="modal_search_v_btn" class="btn-act-w-m" value="상세" ><br>
+			<input type="button" onclick="showID('modal-search')" class="btn-act-w-m" value="상세" ><br>
 			<table class="table-m">
 				<tr>
 					<td class="kw-list-tit">인기검색어</td>
@@ -325,7 +326,7 @@
 		<div id="content-list-left">
 			<div class="con-tit">최신 업데이트 자료</div>
 			<div class="content-box-l">
-				<div class="con-imgbox">
+				<div class="con-imgbox hand" onclick="showID('modal-playmode')">
 				<img src="img/ico_play.png" />				
 				</div>
 				<div class="con-tit-ex">
@@ -338,7 +339,7 @@
 				</div>				
 			</div>
 			<div class="content-box-r">
-				<div class="con-imgbox">
+				<div class="con-imgbox hand" onclick="showID('modal-playmode')">
 				<img src="img/ico_play.png" />				
 				</div>
 				<div class="con-tit-ex">
@@ -351,7 +352,7 @@
 				</div>
 			</div>
 			<div class="content-box-l">
-				<div class="con-imgbox">
+				<div class="con-imgbox hand" onclick="showID('modal-playmode')">
 				<img src="img/ico_play.png" />				
 				</div>
 				<div class="con-tit-ex">
@@ -364,7 +365,7 @@
 				</div>	
 			</div>
 			<div class="content-box-r">
-				<div class="con-imgbox">
+				<div class="con-imgbox hand" onclick="showID('modal-playmode')">
 				<img src="img/ico_play.png" />				
 				</div>
 				<div class="con-tit-ex">
@@ -411,7 +412,7 @@
 <!--//start: footer Area: 4 rows-->
 <div id="footer-noti">
 	<img src="img/ico_noti_s.png" width="25px" /><span class="fs-11-l">[점검 안내]국악아카이브 홈페이지 서비스 중단 안내[2.20.]</span>
-	<button type="button" id="modal_noti_v_btn">더보기</button>	
+	<button type="button" onclick="showID('modal')">보기</button>	
 </div>	
 <div id="footer-link">
 	<span class="fs-11-l">개인정보처리방침  |  저작권 정책  |  뷰어다운로드</span>	
@@ -496,7 +497,7 @@
 <div id="modal-search" style="display:none">
 	<div id="modal-se-co">
 		<div class="align_r">
-			<Input type="button" class="btn-none" id="modal_search_c_btn" value="&#10799;" alt="현재 팝업 닫기" />
+			<Input type="button" class="btn-none" onclick="showID('modal-search')" value="&#10799;" alt="현재 팝업 닫기" />
 		</div>
 		<h2>기록상세검색</h2>
 		<table class="table-search">
@@ -640,6 +641,30 @@
     </div>
 	<!--div class="modal_layer"></div-->
 </div>
+
+	
+<div id="modal-playmode" style="display:none">
+	<div class="modal_content">
+		<div class="icon-box"><img src="img/mark_open.jpg" height="30px"/></div>
+		<h2>2018 수요춤전: 들숨무용단, 생수(生水)[05.02.]</h2>
+		<div class="con-imgbox-ex">
+			<img src="img/ico_play.png" />				
+		</div>
+		<div class="con-tit-btn">
+		<img src="img/ico_lis_view.png" width="20px" /><span class="fs-13">114</span>
+		<img src="img/ico_lis_fav.png" width="20px" /><span class="fs-13">124</span>
+		<!--button class="btn-m-go">&#8702; 상세정보 보기</button-->
+		</div>
+		<!--div class="con-tit-ex2">
+		2018년 3월 31일 15시 국립국악원 우면당에서 개최한 '수요춤전: 들춤무용단, 생수'실황을 우면당 보유 장비로 촬영한 동영상자료. 
+		</div-->		
+		<div class="align_r">
+		<button type="button" onclick="showID('modal-playmode')">창닫기</button>
+		</div>
+    </div>
+	<!--div class="modal_layer"></div-->
+</div>	
+	
 <div id="modal" style="display:none">
 	<div class="modal_content">
 		<h2>[점검 안내]국악아카이브 홈페이지 서비스 중단 안내[2.20.]</h2>
@@ -650,12 +675,13 @@
 		<p>○ 사유: 자가용전기설비 정기검사에 따른 전체 전기 공급 중단</p>
         <br/>
 		<div class="align_r">
-		<button type="button" id="modal_noti_c_btn">창닫기</button>
+		<button type="button" onclick="showID('modal')">창닫기</button>
 		</div>
     </div>
 	<!--div class="modal_layer"></div-->
 </div>
-<script type="text/javascript" src="js/modal.js"></script>
+
+<!--script type="text/javascript" src="js/modal.js"></script-->
 <!--end: The Modal popup Area-->
 	
 	
