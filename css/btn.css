@@ -1,0 +1,249 @@
+.btn-sec-roll {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #D8D8D8;
+	border-style: dashed;
+	background: #fff;
+	font-size: 12px;
+	border-radius: 50%;
+	cursor: pointer;
+	padding: 15px;
+	margin: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+span:hover.btn-sec-roll {
+	font-weight: bold;
+	background:  #E1F5A9;
+}
+
+.btn-sec-roll-on {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #D8D8D8;
+	border-style: dashed;
+	background: #D8F781;
+	font-size: 12px;
+	border-radius: 50%;
+	cursor: pointer;
+	padding: 15px;
+	margin: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+span.btn {
+border: 1px solid rgb(200, 200, 200);
+background: rgb(244, 244, 244);
+font-size: 11px;
+padding:3px;
+border-radius: 5px 5px 5px 5px;
+cursor: pointer;
+}
+
+span.btn-o {
+border: 1px solid rgb(200, 200, 200);
+background: #ffbc40;
+font-size: 11px;
+padding:3px;
+border-radius: 5px 5px 5px 5px;
+cursor: pointer;
+}
+
+span.btn-m-go {
+border: 1px solid rgb(200, 200, 200);
+background-color: antiquewhite;
+font-size: 11px;
+padding: 5px;
+margin: 0px auto;
+cursor: pointer;
+}
+
+span.btn-m-go2 {
+border: 1px solid rgb(200, 200, 200);
+background-color: #96d1ea;
+font-size: 11px;
+padding: 5px;
+margin: 0px auto;
+cursor: pointer;
+}
+
+span.btn-m-go-w {
+border: 1px solid rgb(200, 200, 200);
+background-color: #fff;
+font-size: 11px;
+padding: 5px;
+margin: 0px auto;
+cursor: pointer;
+}
+
+
+.btn-L {
+font-size: 18px;
+color: #BDBDBD;
+padding:0px 0px 5px 0px;
+margin: 0px 20px 0px 20px;
+cursor: pointer;
+}
+
+span:hover.btn-L {
+font-weight: bold;
+border-bottom: 5px solid #E1F5A9;
+}
+
+
+.btn-L-g {
+text-align: center;
+border: 1px solid #D8D8D8;
+border-style: dashed;
+background: #ECF6CE;
+font-size: 9px;
+padding:10px 5px 10px 5px;
+border-radius: 10px 10px 10px 10px;
+cursor: pointer;
+}
+
+.btn-act-g {
+border: 1px solid rgb(200, 200, 200);
+background: rgb(244, 244, 244);
+font-size: 14px;
+color: #BDBDBD;
+padding:10px;
+margin-left: 5px;
+border-radius: 5px 5px 5px 5px;
+cursor: pointer;
+}
+
+span:hover.btn-act-g {
+font-weight: bold
+}
+
+.btn-act-w {
+border: 1px solid rgb(200, 200, 200);
+background: #ffffff;
+font-size: 14px;
+color: #BDBDBD;
+padding:10px;
+margin-left: 5px;
+border-radius: 5px 5px 5px 5px;
+cursor: pointer;
+}
+
+span:hover.btn-act-w {
+font-weight: bold
+}
+
+.btn-tag {
+border: 1px solid rgb(200, 200, 200);
+background: #ffffff;
+font-size: 14px;
+color: #BDBDBD;
+padding:5px;
+margin-left: 5px;
+margin-bottom: 5px;
+border-radius: 10px 10px 10px 10px;
+cursor: pointer;
+display: inline-block;
+line-height: 1;
+}
+
+span:hover.btn-tag {
+font-weight: bold;
+background: #E0F2F7;
+}
+
+
+.cate-label-1 {
+border: 1px solid cadetblue;
+background-color:cadetblue;
+font-size: 12px;
+padding: 5px;
+margin: 0px auto;
+cursor: pointer;
+display: inline-block;
+}
+
+.cate-label-s {
+border: 1px solid darksalmon;
+background-color:darksalmon;
+font-size: 12px;
+padding: 5px;
+margin: 0px auto;
+cursor: pointer;
+display: inline-block;
+}
+
+
+/*탭메뉴*/
+.tab-menu {
+width: 25%;
+height: 30px;
+border: 1px solid rgb(200, 200, 200);
+background-color:beige;
+font-size: 11px;
+color: #BDBDBD;
+padding:5px;
+margin:0px;
+cursor: pointer;
+display: inline-block;
+text-align: center;
+vertical-align: middle
+}
+
+span:hover.tab-menu {
+font-weight: bold;
+background: #E0F2F7;
+}
+
+.listbox {
+width: 90%;
+height: 20px;
+border: 1px solid #ccc;
+background-color: #fff;
+font-size: 12px;
+color: #BDBDBD;
+padding:0px;
+margin:0px;
+text-align: left;
+cursor: pointer;
+display: inline-block;
+vertical-align: baseline
+}
+
+.split {
+	text-algin: right
+}
+
+/*input button*/
+input.com-btn {
+border: 1px solid rgb(200, 200, 200);
+background: #ffffff;
+font-size: 12px;
+color: #BDBDBD;
+padding:3px;
+margin-left: 5px;
+border-radius: 1px 1px 1px 1px;
+text-decoration: none;
+cursor: pointer;
+}
+
+input:focus.com-btn {
+font-weight: bold;
+background: #E0F2F7;
+outline: 0px
+}
+
+input.btn-dummy {
+width="50px";
+height="50px";
+border: 1px solid #ccc;
+background: #ffffff;
+font-size: 18px;
+color: #BDBDBD;
+padding:0 4 0 4px;
+margin-left: 5px;
+text-decoration: none;
+cursor: pointer;
+border-radius: 50px 50px 50px 50px;
+}

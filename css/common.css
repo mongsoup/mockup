@@ -1,0 +1,521 @@
+body {
+	font-family: 'Nanum Gothic', sans-serif;
+	padding: 0px;
+	margin: 0px;
+	color:darkgrey
+}
+
+img {vertical-align: middle}
+
+input {vertical-align: middle;}
+input.form-text {font-size: 12px; color: #BDBDBD; border: 1px solid #bcbcbc; height: 20px; width: 150px; padding: 0px 10px;border-radius: 10px 10px 10px 10px; }
+
+input.form-text2 {font-size: 12px; color: #BDBDBD; border: 1px solid #bcbcbc; height: 20px; width: 100px; padding: 0px 10px }
+
+input.main-form {font-size: 15px; color: #BDBDBD; border: 1px solid #bcbcbc; height: 34px; width: 450px; padding: 0px 10px;border-radius: 5px 5px 5px 5px;}
+
+input.main-form-modal {font-size: 15px; color: #BDBDBD; border: 1px solid #bcbcbc; height: 28px; width: 350px; padding: 0px 10px;border-radius: 5px 5px 5px 5px;}
+
+input.yymmdd {font-size: 12px; color: #BDBDBD; border: 1px solid #bcbcbc; height: 18px; width: 80px; padding: 0 5px; text-align: center;border-radius: 5px 5px 5px 5px;display:inline}
+
+input.keywd70 {font-size: 12px; color: #BDBDBD; border: 1px solid #bcbcbc; height: 20px; width: 70px; padding: 0 5px; text-align: center;border-radius: 5px 5px 5px 5px;}
+
+input.keywd100 {font-size: 12px; color: #BDBDBD; border: 1px solid #bcbcbc; height: 20px; width: 100px; padding: 0 5px; text-align: center;border-radius: 5px 5px 5px 5px;}
+
+input.keywd120 {font-size: 12px; color: #BDBDBD; border: 1px solid #bcbcbc; height: 20px; width: 120px; padding: 0 5px; text-align: center;border-radius: 5px 5px 5px 5px;}
+
+
+
+input:focus {
+font-weight: bold;
+background: #E0F2F7;
+outline: 0px
+}
+
+input::placeholder {color: #BDBDBD;font-size:5px;text-align: left;padding:3px; font-weight: normal;vertical-align: top}
+
+
+input::-webkit-input-placeholder {color: #BDBDBD; }
+input::-ms-input-placeholder {color: #BDBDBD; }
+input::-moz-placeholder {color: #BDBDBD; }
+
+a img {-webkit-filter: grayscale(100%); filter: gray;}
+a:hover img{-webkit-filter: grayscale(0%);filter: none;}
+
+.tit-txt {
+margin-top: 10px;
+font-size: 25px;
+color: #848484;
+}
+
+.tit-txt-b {
+margin-top: 10px;
+font-size: 25px;
+font-weight: bold;
+color: #848484;
+}
+
+.mini-list-tit {
+margin-top: 10px;
+border: 1px solid #D8D8D8;
+background: #F2F2F2;
+font-size: 10px;
+font-weight: bold;
+padding:5px
+}
+
+.layer_tit {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0px;
+	color: cadetblue
+}
+
+
+.big-tit {
+height:20px;
+padding-top: 2px;
+margin-top: 2px;
+font-size: 25px;
+font-weight: bold;
+color: #848484;
+display: block
+}
+
+.big-tit-ex {
+height: 20px;
+padding-top: 10px;
+margin-top: 5px;
+font-size: 14px;
+font-weight: bold;
+color: #848484;
+display:block
+}
+
+.big-tit-ex-long {
+height: 20px;
+padding-top: 10px;
+margin-top: 5px;
+font-size: 12px;
+color: #848484;
+display:block
+}
+
+.big-tit-ex-btn {
+height: 60px;
+padding-top: 10px;
+margin-top: 20px;
+color: #848484;
+text-align: left;
+display: block
+}
+
+.tab-tit {
+font-size: 14px;
+font-weight: bold;
+height: 20px;
+padding-top: 5px;
+margin-top: 5px;
+color: #848484;
+text-align: center;
+display: block
+}
+
+.tab-tit-ex {
+font-size: 12px;
+height: 50px;
+padding: 10px;
+margin-top: 5px;
+color: #848484;
+text-align: left;
+display: block;
+vertical-align:baseline
+}
+
+.tab-tit-btn {
+height: 12px;
+padding-top: 5px;
+margin-top: 5px;
+color: #848484;
+text-align: right;
+display: block
+}
+
+
+.con-tit {
+font-size: 16px;
+font-weight: bold;
+height: 20px;
+margin-bottom: 10px;
+color: #848484;
+}
+
+.con-ico {float: left; padding-right:3px}
+
+.con-ico-vm {padding-right:3px; vertical-align: middle}
+
+.con-imgbox{
+border: 1px solid gray;
+background-color: gray;
+width:100%;
+height:90px;
+text-align: center;
+padding-top: 15px;
+float:left
+}
+
+.con-imgbox-l{
+border: 1px solid gray;
+background-color: gray;
+width:100%;
+height:170px;
+text-align: center;
+padding-top: 75px;
+float:left
+}
+
+.con-tit-ex {
+width: 100%;
+height: 30px;
+padding-top: 5px;
+text-align: left;
+font-size: 11px;
+float:left
+}
+
+.con-tit-ex2 {
+width: 100%;
+height: 30px;
+padding-top: 10px;
+text-align: left;
+font-size: 11px;
+float:left
+}
+
+.con-tit-btn {
+width: 100%;
+height: 20px;
+padding-top: 5px;
+text-align: left;
+float:left
+}
+
+.footer-div{
+	width:880px;
+	background: #000;
+	text-align: center;
+	margin: 0px auto
+}
+
+.footer-div1{
+	width: 20%;
+	height:50px;
+	float: left;
+}
+
+.footer-div2{
+	width: 50%;
+	height:50px;
+	text-align: left;
+	float: left;
+}
+
+.footer-div3{
+	width: 10%;
+	height:50px;
+	float: left;
+	text-align: right;
+}
+
+.footer-div4{
+	width: 20%;
+	height:50px;
+	float: left;
+}
+
+
+/*글자크기*/
+.fs-8 {padding: 10px; font-size: 8px;font-family: 'Nanum Gothic', sans-serif;}
+
+.fs-10 {padding: 10px; font-size: 10px;font-family: 'Nanum Gothic', sans-serif;}
+
+.fs-11 {font-size: 11px;font-family: 'Nanum Gothic', sans-serif;}
+
+.fs-11-l {text-align: left;padding: 10px; font-size: 11px;font-family: 'Nanum Gothic', sans-serif;}
+
+.fs-13  {padding: 10px; font-size: 13px;font-family: 'Nanum Gothic', sans-serif;}
+
+.fs-13-b  {font-size: 13px; font-weight:bold; padding:2px 2px 0px 0px; text-align: left; vertical-align: middle}
+
+.fs-15-b  {font-size: 15px; font-weight:bold; padding:20px 2px 0px 0px; text-align: left; vertical-align: middle}
+
+
+.ce-15  {padding: 10px; font-size:15px;}
+.ce-25  {padding: 10px; font-size:25px;text-align: right}
+.ce-25-b  {padding: 10px; font-size:30px;font-weight:bold;}
+
+.link-s {font-size: 10px;}
+.link-m {font-size: 12px;}
+.link-m-r {font-size: 12px;color: #bcbcbc; padding: 10px}
+
+h2 {
+font-size: 20px;
+margin:0px; 
+padding-bottom:10px;
+text-align:  left;
+background:#fff;
+font-weight: bold
+}
+
+
+/*table*/
+.table-m{
+width: 80%;
+height: 100px;
+border: 0px;
+margin: 10px auto;
+text-align: center;
+border-spacing: 0px
+}
+
+.table-m td {text-align: left;font-size: 12px; vertical-align: top}
+
+
+.table-search{
+width: 100%;
+border: 0px;
+margin: 10px auto;
+text-align: left;
+border-spacing: 0px;
+		background: #ccc;
+}
+
+.table-search td.underline {
+padding: 5px;
+vertical-align: top;
+border-bottom: 1px solid #ccc;
+background: #fff;
+font-size: 12px;
+line-height: 18px;
+}
+
+.table-search td {
+padding: 5px;
+vertical-align: middle;
+background: #fff;
+font-size: 12px;
+line-height: 18px;
+}
+
+.table-search-option{
+width: 98%;
+height: 240px;
+border: 0px;
+padding: 10px;
+margin: 0px auto;
+text-align: left;
+border-spacing: 0px;
+background-color:beige
+}
+
+.table-search-option td {
+	font-size: 10px;
+	color:darkgrey;
+	vertical-align: baseline;
+	text-align: left
+}
+
+.table-search-option td.flag {
+	font-size: 12px;
+	color:darkgrey;
+	vertical-align: top;
+	text-align: left;
+padding-top:20px;
+}
+
+table.type11 {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 1px;
+    text-align: left;
+    line-height: 1.5;
+    margin: 5px auto;
+    font-size: 11px;
+	color:cadetblue
+}
+
+table.type11 th {
+    padding: 5px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #fff;
+    background: #37C3C3;
+    font-size: 12px
+}
+
+table.type11 td {
+    padding: 5px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    font-size: 12px;
+}
+
+table.type11 td.masking {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.align_r {text-align: right;padding:0px;margin:0px}
+.align_l {text-align: left}
+.align_c {text-align: center}
+
+
+/*그래프*/
+.graph {
+background-color:antiquewhite;
+border: 1px solid #bcbcbc;  
+width: 10px; 
+padding: 0px 10px;
+border-radius: 25px 25px 25px 25px;
+margin: 0px auto;
+cursor: pointer;
+}
+
+.graph-t{
+width: 70%;
+height: 90px;
+border: 0px;
+margin: 5px auto;
+text-align: center;
+vertical-align: top;
+border-collapse: separate;
+border-spacing: 0px;
+}
+
+.graph-t td {width: auto;text-align: center;font-size: 11px;color:dimgrey; vertical-align: baseline; padding:0px; margin:0px}
+
+.hr {width:100%; height:1px; padding: 0px; margin:0px; border-style: solid #ccc}
+
+.text-box{
+	display: block;
+	height: 150px;
+	padding: 0px;
+	margin: 0px auto;
+	text-align: left;
+}
+
+
+/*셀렉트박스*/
+select {
+    width: 120px; /* 원하는 너비설정 */
+    padding: 4px; /* 여백으로 높이 설정 */
+    border: 1px solid #ccc;
+    border-radius: 0px; /* iOS 둥근모서리 제거 */
+	vertical-align: middle
+}
+
+
+button {
+background-color: #fff;
+padding: 2px 2px;
+margin: 2px;
+border: none;
+color: black;
+text-align: center;
+text-decoration: none;
+font-size: 11px;
+display: inline-block;
+cursor: pointer;
+}
+
+.hand {cursor: pointer;}
+
+
+/*checkbox*/
+
+
+input[type=checkbox] {  
+    display: none;  
+}
+
+input[type=checkbox] + label{
+    display: inline-block;  
+    cursor: pointer;  
+    position: relative;  
+    padding-left: 20px;  
+    margin-right: 10px;  
+    font-size: 12px;
+}
+
+input[type=checkbox]+ label:before {     
+
+    content: "";  
+    display: inline-block;    
+    width: 15px;  
+    height: 15px;    
+    margin-right: 10px;  
+    position: absolute;  
+    left: 0;  
+    bottom: 0px;  
+    background-color: #ccc;  
+    border-radius: 2px; 
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);  
+}
+
+
+input[type=checkbox]:checked + label:before { 
+
+    content: "\2713";  /* 체크모양 */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);  
+    font-size: 18px; 
+    font-weight:800; 
+    color: #fff;  
+    background:darkturquoise;
+    text-align: center;  
+    line-height: 18px;  
+
+} 
+
+/*radiobox*/
+
+input[type=radio] {  
+    display: none;  
+}
+
+input[type=radio] + label{
+    display: inline-block;  
+    cursor: pointer;  
+    position: relative;  
+    padding-left: 20px;  
+    margin-right: 10px;  
+    font-size: 12px;
+	vertical-align: top
+}
+
+input[type=radio]+ label:before {     
+
+    content: "";  
+    display: inline-block;   
+    width: 18px;  
+    height: 18px;    
+    margin-right: 10px;  
+    position: absolute;  
+    left: 0;  
+    bottom: 0px;  
+    background-color: #ccc;  
+    border-radius: 50px; 
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);  
+}
+
+input[type=radio]:checked + label:before { 
+
+    content: "\2022";  /* 동그라미모양 */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);  
+    font-size: 18px; 
+    font-weight:800; 
+    color: #fff;  
+    background:darkturquoise;
+    text-align: center;  
+    line-height: 18px;  
+}
