@@ -358,7 +358,7 @@ background:#fff;
 border:1px solid #666;
 font-size: 11px;
 text-align: left;
-overflow: auto;
+overflow: hidden;
 }
 
 #modal-playmode {
