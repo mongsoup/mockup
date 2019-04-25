@@ -351,8 +351,8 @@ background-color: #fff;
 
 #modal .modal_content {
 width:250px;
-height: 210px;
-margin:100px auto;
+height: 230px;
+margin:60px auto;
 padding:30px 20px;
 background:#fff;
 border:1px solid #666;
@@ -365,7 +365,7 @@ overflow: hidden;
 display: none;
 position: fixed;
 z-index: 1000;
-padding-top: 100px;
+padding-top: 60px;
 left: 0;
 top: 0;
 width: 100%;
