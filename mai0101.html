@@ -28,16 +28,28 @@
 	</div>
 
 <!--//모바일 축소-->
-	<div id="portal-navi-mo">
-		<span class="hand" onclick="showID('portal-navi-mo-ex')"><img src="img/p_logo.png" width="100px"  /></span><span class="ce-15">&#8888;</span>
+	<div id="portal-navi-mo" class="hand" onclick="showID('portal-navi-mo-ex')">
+		<img src="img/p_logo.png" width="100px"  /><span class="ce-15">&#8888;</span>
 	</div>
 
 <!--//모바일 축소: 메뉴 클릭-->
 	<div id="portal-navi-mo-ex" onMouseOver="mouseOver(this)" onMouseOut="mouseOut(this)">
-		<div class="fs-13">국악 아카이브 포함 국립국악원 전체 통합검색을 합니다. <br />검색결과는 새창으로 열립니다.<br /></div>
-		<input type="text" class="form-text2" />
-		<img src="img/ico_search_b.png" width="25px" /><br /><br />
-		<span class="link-m-r">로그인 | 아이디/패스워드 찾기 <br />회원가입</span>
+		<div class="text-box-bg-r">
+			국립국악원에서 운영하는 국악아카이브입니다.<br />
+			디지털화된 각종 국악자원을 열람하실 수 있습니다<br />
+		</div>		
+		<img src="img/p_logo.png" width="120px" /><img src="img/logo.png" width="150px" />
+		<table class="table-se">
+			<tr>
+			  <td widht="150px" height="30px"><input type="text" class="form-text00" /></td>
+			  <td widht="150px" height="30px"><input type="text" class="form-text00" autofocus /></td>
+			</tr>
+			<tr>
+			  <td><button class="btn-mo-se">&#8981; 국립국악원 통합검색</button></td>
+			  <td><button class="btn-mo-se">&#8981; 국악아카이브 검색</button></td>
+			</tr>
+		</table>
+		<span class="link-m-r" style="vertical-align:middle">로그인 | 아이디/패스워드 찾기 <button>회원가입</button></span>
 	</div>
 </div>
 <!--//start: top potal area: total searching, Links(login/find a password/sign up) : + mobile version-->	
@@ -120,7 +132,7 @@
 			<img src="img/ico_search_b.png" width="25px" />
 		</div>
 		<div id="mobile-navi-ex-se-2r">
-			<button class="tab-menu" onclick="chgIndex1()" checked>검색어<br />자동완성</button>
+			<button class="tab-menu" onclick="chgIndex1()" autofocus>검색어<br />자동완성</button>
 			<button class="tab-menu" onclick="chgIndex2()">국악시소러스<br />참조</button>
 			<button class="tab-menu" onclick="chgIndex3()">최근<br />검색어</button>	
 		</div>
