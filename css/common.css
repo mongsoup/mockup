@@ -255,8 +255,8 @@ background: #F2F2F2;
 
 
 .ce-15  {padding: 10px; font-size:15px;}
-.ce-25  {padding: 10px; font-size:25px;text-align: right}
-.ce-25-b  {padding: 10px; font-size:30px;font-weight:bold;}
+.ce-25  {padding: 10px; font-size:40px;text-align: right}
+.ce-25-b  {padding: 0px; font-size:30px;font-weight:bold;}
 
 .link-s {font-size: 10px;}
 .link-m {font-size: 12px;}
@@ -386,7 +386,9 @@ table.type11 td.masking {
 .align_r {text-align: right;padding:0px;margin:0px}
 .align_l {text-align: left}
 .align_c {text-align: center}
+.align_r_p {text-align: right;padding:0px;margin-right:10px}
 
+.positon_set{positon: absolute top:-20}
 
 /*그래프*/
 .graph {
