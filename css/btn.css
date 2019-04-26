@@ -154,6 +154,29 @@ outline:0px
 }
 
 
+.btn-mo-se {
+font-size: 12px;
+border: 1px solid #ccc;
+color: #BDBDBD;
+padding:3px;
+cursor: pointer;
+border-radius: 5px 5px 5px 5px;
+}
+
+button:hover.btn-mo-se {
+border: 1px solid #ccc;
+border-style: dashed;
+outline:0px
+}
+
+button:focus.btn-mo-se {
+border: 1px solid #ccc;
+border-style: dashed;
+outline:0px
+}
+
+
+
 /*right-slider: banner*/
 .btn-L-g {
 text-align: center;

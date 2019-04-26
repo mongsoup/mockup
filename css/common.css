@@ -24,13 +24,15 @@ input.keywd100 {font-size: 12px; color: #BDBDBD; border: 1px solid #bcbcbc; heig
 
 input.keywd120 {font-size: 12px; color: #BDBDBD; border: 1px solid #bcbcbc; height: 20px; width: 120px; padding: 0 5px; text-align: center;border-radius: 5px 5px 5px 5px;}
 
+input.form-text00 {font-size: 12px; color: #BDBDBD; border: 1px solid #bcbcbc; height: 25px; width: 110px; padding: 0px 10px;border-radius: 10px 10px 10px 10px; }
+
 
 input:focus {
 background: #E0F2F7;
 outline: 0px
 }
 
-input::placeholder {color: #BDBDBD;font-size:5px;text-align: left;padding:3px; font-weight: normal;vertical-align: top}
+input::placeholder {color: #BDBDBD;font-size:9px;text-align: left;padding:3px; font-weight: normal;vertical-align: top}
 
 
 input::-webkit-input-placeholder {color: #BDBDBD; }
@@ -230,6 +232,9 @@ cursor: pointer;
 background: #F2F2F2;
 }
 
+.text-box-bg-r {width:70%; background-color:black;color:#fff; padding:5px; margin:10px auto; font-size:11px; border-radius: 5px 5px 5px 5px; line-height: 1.5em}
+
+.text-box-underline {width:90%; color:#ccc; padding:5px; margin:10px auto; font-size:11px; border-bottom: 1px solid #ccc}
 
 /*글자크기*/
 .fs-8 {padding: 10px; font-size: 8px;font-family: 'Nanum Gothic', sans-serif;}
@@ -279,6 +284,17 @@ border-spacing: 0px
 
 .table-m td {text-align: left;font-size: 12px; vertical-align: top}
 
+.table-se{
+width: 300px;
+height: 70px;
+border: 0px;
+margin: 5px auto;
+text-align: center;
+border-spacing: 0px
+}
+
+.table-m td {text-align: center;font-size: 12px; vertical-align: top}
+
 
 .table-search{
 width: 100%;
@@ -286,7 +302,7 @@ border: 0px;
 margin: 10px auto;
 text-align: left;
 border-spacing: 0px;
-		background: #ccc;
+background: #ccc;
 }
 
 .table-search td.underline {

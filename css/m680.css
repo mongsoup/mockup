@@ -35,20 +35,22 @@ display: block;
 
 #portal-navi-mo-ex
 {
-position: relative;
+position: absolute;
 z-index: 2;
 margin: 0px auto;
 text-align: center;
-top: -10px;
-width: 200px;
- padding: 10px;
+top: 0px;
+width: 100%;
+height:300px;
+ padding-top: 40px;
 border: 1px solid;
-border-style: dashed;
 background-color:#fff;
 display: none
 }
 
-#portal-navi-mo,#mobile-navi img {vertical-align: middle; -webkit-filter: grayscale(100%); filter: gray; opacity:0.5!important; filter:alpha(opacity=50); margin-left: 10px; margin-right: 10px} 
+#portal-navi-mo-ex img{padding:10px}
+
+#portal-navi-mo,#mobile-navi img {vertical-align: middle; -webkit-filter: grayscale(100%); filter: gray; opacity:0.5!important; filter:alpha(opacity=50); margin-left: 20px; margin-right: 20px} 
 
 
 img.trans50 {vertical-align: middle; -webkit-filter: grayscale(100%); filter: gray; opacity:0.5!important; filter:alpha(opacity=50); margin-left: 10px; margin-right: 10px} 
@@ -67,9 +69,9 @@ display: block;
 #mobile-navi-ex
 {
 width: 260px;
-height: 400px;
+height: 100%;
 position: fixed;
-top: 50px;
+top: 0px;
 left: 0px
 z-index: 4;
 margin: 0px auto;
@@ -152,8 +154,8 @@ line-height: 1.5em
 {
 position: fixed;
 width: 260px;
-height: 400px;
-top: 50px;
+height: 100%;
+top: 0px;
 right: 0px;
 margin: 0px auto;
 padding: 10px;
