@@ -14,6 +14,8 @@ background-color: rgba(0,0,0,0.4);
 
 }
 
+
+
 #modal-search {
 display: none;
 position: fixed;
@@ -43,7 +45,7 @@ background-color: rgba(0,0,0,0.4);
 
 #modal-se-co {
 width:550px;
-height: 400px;
+height: 500px;
 margin:0px auto;
 padding:0px 20px;
 background:#fff;
