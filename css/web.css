@@ -97,7 +97,7 @@ padding: 10px
 
 table.type11 {
     border-collapse: collapse;
-    text-align: left;
+    text-align: center;
     line-height: 1.5;
     border: 0px;
     margin: 0px;
@@ -115,7 +115,7 @@ table.type11 th {
 }
 
 table.type11 td {
-    padding: 10px;
+    padding: 5px;
     vertical-align: top;
     border-bottom: 1px solid #ccc;
     font-size: 12px;
